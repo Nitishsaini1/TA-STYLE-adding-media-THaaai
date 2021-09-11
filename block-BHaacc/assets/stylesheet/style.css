@@ -66,7 +66,15 @@ body{
 	padding: 12px 18px;
    font-weight: 400;
 }
-
+.button{
+	margin-left: 40px;
+	font-size: 16px;
+	font-weight: bolder;
+	border-radius: 32px;
+	display: inline-block;
+	color: #fff;
+	background-color: red;
+}
 /* -------- generic style----------- */
 .container{
     max-width: 1330px;
@@ -167,6 +175,7 @@ body{
 	border-radius: 32px;
 }
 /* ----------------------- about-------------------------- */
+
 .flex-40{
 	flex: 0 1 40%;
 }
@@ -180,6 +189,7 @@ body{
 .about-img{
 	width: 100%;
 	height: auto;
+	margin-bottom: -8px;
 }
 .about{
 	padding: 80px 0;
@@ -189,6 +199,7 @@ body{
 {
 	margin-bottom: 24px;
 }
+
 .text{
 	font-size: 16px;
 	line-height: 1.7;
@@ -210,8 +221,16 @@ body{
 }
 progress{
 	width: 100%;
-	color: black;
+	height: 4px;
+	appearance: none;
 }
+progress::-webkit-progress-bar{
+	 background-color: #d8d8d8;
+}
+progress::-webkit-progress-value{
+	 background-color: black;
+}
+
 .flex-img{
 	position: absolute;
 	width: 20%;
@@ -222,6 +241,7 @@ progress{
 	text-align: center;
 }
 .blog{
+	padding: 80px 0;
 	background-color: rgb(243, 235, 235);
 }
 .article{
@@ -230,6 +250,10 @@ progress{
 }
 .font-0{
 	font-size: o;
+}
+/* ------work------- */
+.work{
+	padding: 80px 0;
 }
 .article-content{
 	padding: 32px;
@@ -258,7 +282,10 @@ progress{
 .sec-header h3{
 	font-size: 40px;
 	font-weight: 700;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+.color{
+	color: black;
 }
 .flex-23{
 	flex: 0 1 23%;
@@ -267,9 +294,65 @@ progress{
 	border-radius: 6px;
 }
 .contact{
+	color: #fff;
+	padding: 80px 0;
 	background: linear-gradient(
 			to right,
 			 rgba(19, 120, 228, 0.7), 
 			 rgba(126, 243, 102, 0.7)
 			 );
+}
+.form-control{
+	display: block;
+	width: 100%;
+	color: black;
+	padding: 16px 12px;
+	border: 0;
+	border-radius: 6px;
+	margin: 9px ;
+}
+.circle{
+	border-radius: 50%;
+}
+.footer{
+	background-color: rgb(32, 32, 32);
+	color: #ffff;
+}
+.footer a{
+	color: #fff;
+}
+.align-start{
+	align-items:baseline;
+	padding: 80px 0 40px 0;
+}
+.grey p {
+	padding-top: 20px;
+	color: #a39e9f;
+}
+.grey ul{
+	padding-top: 20px;
+	
+}
+.grey ul a{
+	color: #a39e9f;
+}
+.grey address {
+	padding-top: 20px;
+	color: #a39e9f;
+}
+.footer-down {
+	padding: 60px 0 40px 0;
+	color: #a39e9f;
+}
+.footer hr{
+	color: #a39e9f;
+}
+.carry{
+	display: flex;
+}
+.carry span {
+	padding-right: 10px;
+}
+.color h3 {
+	color: #fff;
 }
